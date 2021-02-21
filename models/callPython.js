@@ -1,7 +1,7 @@
 var { PythonShell } = require('python-shell');
 
 // Python本体のexeファイルへのパス
-var envPythonPath = 'C:/Users/白木秀弥/AppData/Local/Programs/Python/Python38-32/python.exe';
+var envPythonPath = 'path/to/python.exe';
 
 // interface.pyへのパス
 var pythonCodePath = './models/python/interface.py'
