@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1><%= title %></h1>
+  <p>ここは <%= title %> です</p>
+  <form id="form" method="POST" action="./result">
+    <% keys.forEach(function (value, key) { %>
+    <p><%= parametors[value] %> : <input type="text" id="<%= value %>" name="<%= value %>" value="0" /></p>
+    <% }); %>
+    <input type="submit" value="送信">
+  </form>
+</body>
+
+</html>
